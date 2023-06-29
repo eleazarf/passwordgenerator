@@ -18,8 +18,14 @@ generateBtn.addEventListener("click", writePassword);
 //This code generate a password
 function generatePassword() {
   //choose password length
-  lenghtp = Number(window.prompt("Password Lenght? (min 8, max 128)", ""));
-  var length = lenghtp;
+
+  var length = Number(window.prompt("Choose your password lenght? (min 8, max 128)", ""));
+
+  if (length < 8 || length > 128) {
+    alert("Invalid password length. Password lenght must be between 8 to 128 characters. Please try again.");
+    return;
+  }
+
   var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   var password = "";
 
