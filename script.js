@@ -35,3 +35,30 @@ function generatePassword() {
     alert("You must select at least one character type. Please try again.");
     return;
   }
+
+  var characterSet = '';
+
+  if (lower) {
+    characterSet += 'abcdefghijklmnopqrstuvwxyz';
+  }
+
+  if (upper) {
+    characterSet += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  }
+
+  if (numeric) {
+    characterSet += '0123456789';
+  }
+
+  if (special) {
+    characterSet += '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
+  }
+
+  var password = '';
+
+  for (var i = 0; i < length; i++) {
+    var randomIndex = Math.floor(Math.random() * characterSet.length);
+    password += characterSet.charAt(randomIndex);
+  }
+  return password;
+}
