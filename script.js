@@ -30,3 +30,8 @@ function generatePassword() {
   var upper = confirm("Would you like to include uppercase characters?");
   var numeric = confirm("Would you like to include numeric characters?");
   var special = confirm("Would you like to include special characters?");
+
+  if (!lower && !upper && !numeric && !special) {
+    alert("You must select at least one character type. Please try again.");
+    return;
+  }
