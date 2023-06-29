@@ -8,7 +8,7 @@ Module 3 Challenge secure password generator project. I code a JS to cover the t
 
 
 ## Screenshot<br>
-![Screenshot-03-generatesecurepassword])
+![Screenshot-03-generatesecurepassword]https://github.com/eleazarf/passwordgenerator/blob/main/images/Captura%20de%20pantalla%202023-06-29%20162844.jpg)
 <br>
 
 ## link to the project <br>
