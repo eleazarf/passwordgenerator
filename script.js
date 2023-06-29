@@ -24,14 +24,4 @@ function generatePassword() {
   if (length < 8 || length > 128) {
     alert("Invalid password length. Password lenght must be between 8 to 128 characters. Please try again.");
     return;
-  }
-
-  var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  var password = "";
-
-  for (var i = 0, n = charset.length; i < length; ++i) {
-    password += charset.charAt(Math.floor(Math.random() * n));
-  }
-  return password;
-}
-
+  } 
