@@ -24,4 +24,9 @@ function generatePassword() {
   if (length < 8 || length > 128) {
     alert("Invalid password length. Password lenght must be between 8 to 128 characters. Please try again.");
     return;
-  } 
+  }
+
+  var lower = confirm("Would you like to include lowercase characters?");
+  var upper = confirm("Would you like to include uppercase characters?");
+  var numeric = confirm("Would you like to include numeric characters?");
+  var special = confirm("Would you like to include special characters?");
